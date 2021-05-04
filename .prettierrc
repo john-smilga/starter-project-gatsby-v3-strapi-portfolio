@@ -1,4 +1,10 @@
 {
-  "arrowParens": "avoid",
-  "semi": false
+  "singleQuote": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "bracketSpacing": true,
+  "printWidth": 120,
+  "trailingComma": "all",
+  "arrowParens": "avoid"
 }
