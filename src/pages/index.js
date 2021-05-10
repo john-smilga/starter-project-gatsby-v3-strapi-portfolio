@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import Jobs from '../components/Jobs';
 import Projects from '../components/Projects';
 import Seo from '../components/Seo';
+
 const IndexPage = ({ data }) => {
   const {
     allStrapiProject: { nodes: projects },
@@ -46,4 +47,5 @@ export const query = graphql`
     }
   }
 `;
+
 export default IndexPage;
