@@ -6,7 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: `Stan Lee Portfolio`,
+    description: `Stan Lee's Portfolio built with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio`,
+    url: `TODO: FILL THIS PART UP`,
+    twitterUsername: `@stan_lee`,
+    image: `/mainImg.png`,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -26,7 +33,7 @@ module.exports = {
         queryLimit: 1000, // Default to 100
         contentTypes: [`job`, `project`],
         //If using single types place them in this array.
-        // singleTypes: [`home-page`, `contact`],
+        singleTypes: [`about`],
         // Possibility to login with a strapi user, when content types are not publically available (optional).
         // loginData: {
         //   identifier: '',

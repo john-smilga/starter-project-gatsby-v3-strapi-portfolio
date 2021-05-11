@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookSquare, FaLinkedin, FaDribbbleSquare, FaBehanceSquare, FaTwitterSquare } from 'react-icons/fa';
+import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const data = [

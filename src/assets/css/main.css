@@ -961,3 +961,8 @@ Contact Page
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+.img {
+  width: 20rem;
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
+}

@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="social-links">
               {socialLinks.map(link => {
                 return (
-                  <a href={link.url} key={link.id} className="social-link" target="_blank">
+                  <a href={link.url} key={link.id} className="social-link" target="_blank" rel="noreferrer">
                     {link.icon}
                   </a>
                 );
