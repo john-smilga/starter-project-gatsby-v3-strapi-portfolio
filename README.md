@@ -18,7 +18,12 @@
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
+        
+        // Older Plugin Version 0.0.12 (used in the starter)
         // contentTypes: [`jobs`, `projects`, `blogs`, ],
+        // New Plugin Version 1+ (npm install gatsby-source-strapi@latest)
+        // collectionTypes: [`jobs`, `projects`, `blogs`, ],
+
         //singleTypes:[`about` ]
         contentTypes: [`jobs`, `projects`, `blogs`],
         singleTypes: [`about`],
