@@ -46,3 +46,7 @@ npm start
 
 use gatsby-browser.js , and add it to wrapPageElement
 <https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/>
+
+## for SVG images
+
+use <https://undraw.co/>

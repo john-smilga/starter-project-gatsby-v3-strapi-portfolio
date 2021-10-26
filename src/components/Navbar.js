@@ -5,7 +5,7 @@ import pageLinks from "../constants/links"
 import { Link } from "gatsby"
 const Navbar = () => {
   return (
-    <h2>
+    <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
           <img src={logo} alt="Builder" />
@@ -23,7 +23,7 @@ const Navbar = () => {
           })}
         </div>
       </div>
-    </h2>
+    </nav>
   )
 }
 
