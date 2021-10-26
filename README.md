@@ -30,3 +30,19 @@
       },
     },
 ```
+
+## 24/10/2021
+
+----------
+To run the project
+
+```shell
+npm install
+npm start
+
+```
+
+## add global layout
+
+use gatsby-browser.js , and add it to wrapPageElement
+<https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/>

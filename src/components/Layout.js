@@ -5,7 +5,9 @@ import Footer from "./Footer"
 
 import "../assets/css/main.css"
 const Layout = ({ children }) => {
-  return <>{children}</>
+  return <>
+  <Navbar></Navbar>
+  {children}</>
 }
 
 export default Layout
