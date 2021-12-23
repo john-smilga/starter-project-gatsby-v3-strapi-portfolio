@@ -3,13 +3,20 @@
 ## Setup Notes
 
 1. Used Hello World Starter (all packages included)
+    check gatsby-config.js example :
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`
+    `gatsby-source-filesystem`
+    `gatsby-plugin-react-helmet`
 2. All components ready to go (including imports)
 3. main.css - all styles ready to go
 4. No font plugin
 5. React-icons
 6. Limit amount of components - better overview
 7. Use constants to avoid repetition
-8. Favicon in Static
+    in the constants folder example : constants/links.js ect.
+8. Favicon in Static -> from <https://favicon.io/>
 9. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
 
 ```javascript
@@ -50,3 +57,7 @@ use gatsby-browser.js , and add it to wrapPageElement
 ## for SVG images
 
 use <https://undraw.co/>
+
+## Adding strapi plugin
+
+gatsby-source-strapi

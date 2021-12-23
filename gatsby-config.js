@@ -19,5 +19,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-strapi`,
+      options: {
+        apiURL: `http://localhost:1337/api`,
+        queryLimit: 1000, // Defaults to 100
+        collectionTypes: [
+          {
+            name: `job`,
+            api: { qs: { populate: `*` } }
+          }       
+          ],
+        // singleTypes: [`description`],
+      },
+    },
   ],
 }
