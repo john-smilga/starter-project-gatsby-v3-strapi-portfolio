@@ -22,15 +22,26 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337/api`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [
           {
             name: `job`,
-            api: { qs: { populate: `*` } }
-          }       
+            api: { qs: { populate: `*` } },
+            endpoint: `api/jobs`
+
+          },
+          {
+            name: `project`,
+            api: { qs: { populate: `*` } },
+            endpoint: `api/projects`
+          }          
           ],
-        // singleTypes: [`description`],
+         singleTypes: [{
+          name: `about`,
+          api: { qs: { populate: `*` } },
+          endpoint: `api/about`
+        }   ],
       },
     },
   ],

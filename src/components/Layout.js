@@ -5,9 +5,13 @@ import Footer from "./Footer"
 
 import "../assets/css/main.css"
 const Layout = ({ children }) => {
-  return <>
-  <Navbar></Navbar>
-  {children}</>
+  return (
+    <>
+      <Navbar></Navbar>
+      {children}
+      <Footer />
+    </>
+  )
 }
 
 export default Layout
