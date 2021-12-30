@@ -61,3 +61,10 @@ use <https://undraw.co/>
 ## Adding strapi plugin
 
 gatsby-source-strapi
+
+## To deploy
+
+gatsby clean
+gatsby build
+
+and use the public folder to deploy
