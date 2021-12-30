@@ -3,6 +3,7 @@ import Seo from "../components/Seo"
 const contact = () => {
   return (
     <>
+      <Seo title="Contact" />
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
@@ -14,16 +15,17 @@ const contact = () => {
                 placeholder="name"
                 className="form-control"
               />
-               <input
+              <input
                 type="email"
                 name="email"
                 placeholder="email"
                 className="form-control"
               />
-               <textarea
-                 name="message"
+              <textarea
+                name="message"
                 placeholder="message"
-                className="form-control" rows="5" 
+                className="form-control"
+                rows="5"
               />
             </div>
             <button type="submit" className="submit-btn btn">

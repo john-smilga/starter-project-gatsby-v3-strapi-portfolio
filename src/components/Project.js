@@ -3,9 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 import { Link } from "gatsby"
 
-const Project = ({attributes,index }) => {
-  console.log(attributes)
-  
+const Project = ({attributes,index }) => { 
   return <article className="project">
     <GatsbyImage image={getImage(attributes.image.data.attributes.localFile)}
     className="project-img" alt="{attributes.title}"/>

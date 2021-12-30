@@ -5,17 +5,16 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Seo from "../components/Seo"
-const IndexPage = ({data}) => {
-  const projects = data.allStrapiProject.edges[0].node.data
-  console.log(data)
+const IndexPage = ({ data }) => {
+  const projects = data.allStrapiProject.edges[0].node.data 
   return (
     <>
+      <Seo title="Home" />
       <main>
         <Hero />
-        <Services/>
-        <Jobs/>
-        <Projects title="featured projects" showLink
-        projects={projects}/>
+        <Services />
+        <Jobs />
+        <Projects title="featured projects" showLink projects={projects} />
       </main>
     </>
   )
@@ -24,7 +23,9 @@ const IndexPage = ({data}) => {
 export const query = graphql`
   {
     allStrapiProject(
-      filter: {data: {elemMatch: {attributes: {featured: {eq: true}}}}}
+      filter: {
+        data: { elemMatch: { attributes: { featured: { eq: true } } } }
+      }
     ) {
       totalCount
       edges {
@@ -46,7 +47,10 @@ export const query = graphql`
                   attributes {
                     localFile {
                       childImageSharp {
-                        gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                        gatsbyImageData(
+                          layout: CONSTRAINED
+                          placeholder: BLURRED
+                        )
                       }
                     }
                   }

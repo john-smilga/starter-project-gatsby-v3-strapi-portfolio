@@ -6,7 +6,14 @@
 
 module.exports = {
   /* Your site config here */
-
+  siteMetadata: {
+    title: "Product Builder Portfolio",
+    description: "Product Builder portfolio built with Gatsby and Strapi",
+    titleTemplate:'%s | ProductBuilder portfolio',
+    url:`https://sumith-strapi-portfolio.netlify.app`,
+    twitterUsername:'@sumithpdd',
+    image:`/mainImg.png`
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -28,20 +35,21 @@ module.exports = {
           {
             name: `job`,
             api: { qs: { populate: `*` } },
-            endpoint: `api/jobs`
-
+            endpoint: `api/jobs`,
           },
           {
             name: `project`,
             api: { qs: { populate: `*` } },
-            endpoint: `api/projects`
-          }          
-          ],
-         singleTypes: [{
-          name: `about`,
-          api: { qs: { populate: `*` } },
-          endpoint: `api/about`
-        }   ],
+            endpoint: `api/projects`,
+          },
+        ],
+        singleTypes: [
+          {
+            name: `about`,
+            api: { qs: { populate: `*` } },
+            endpoint: `api/about`,
+          },
+        ],
       },
     },
   ],

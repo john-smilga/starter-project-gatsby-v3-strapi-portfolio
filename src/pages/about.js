@@ -2,12 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Seo from "../components/Seo"
-import { FaStackExchange } from "react-icons/fa"
-
 const About = ({ data }) => {
   const aboutdata = data.strapiAbout.data.attributes
   return (
     <>
+      <Seo title="About" />
       <section className="about-page">
         <div className="section-center about-center">
           <img
